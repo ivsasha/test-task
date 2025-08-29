@@ -1,5 +1,5 @@
 .form-section {
-  padding: 0px 16px 100px;
+  padding: 0 16px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,10 +83,10 @@
     display: flex;
     align-items: center;
 
-    animation: fadeInError 0.3s ease-in-out;
+    animation: fade-in-error 0.3s ease-in-out;
   }
 
-  @keyframes fadeInError {
+  @keyframes fade-in-error {
     from {
       opacity: 0;
       transform: translateY(-10px);

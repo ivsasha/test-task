@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 50px;
     margin-bottom: 43px;
+
     @media (min-width: 768px) {
       align-items: center;
     }
@@ -50,10 +51,6 @@
       top: -13px;
       font-size: 12px;
       color: rgba(126, 126, 126, 1);
-    }
-
-    &:focus + .form-section__label {
-      color: rgba(0, 189, 211, 1);
     }
 
     &.error {
