@@ -10,12 +10,13 @@
   background-size: cover;
 
   @media (min-width: 768px) {
-    background-image: url('/bg/bg1.png');
+    background-image: url('/bg/bg-tablet.png');
     padding: 89px 194px;
     background-position: center center;
   }
 
   @media (min-width: 1024px) {
+    background-image: url('/bg/bg-desktop.png');
     padding: 164px 322px;
     background-size: 1170px 650px;
   }
