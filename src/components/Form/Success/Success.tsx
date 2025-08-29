@@ -6,7 +6,7 @@ export const Success = () => {
       <h1 className="form-section__title">User successfully registered</h1>
       <img
         className="form-section__img-success"
-        src="/bg/success-image.svg"
+        src="./bg/success-image.svg"
         alt="succses-image"
       />
     </>
