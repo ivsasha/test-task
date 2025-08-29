@@ -5,8 +5,8 @@ export const NavBar = () => {
     <header className="header">
       <div className="header__left">
         <a href="#" className="header__logo">
-          <img src="../public/logo/logo.svg" alt="logo" />
-          <img src="../public/logo/text-logo.svg" alt="text-logo" />
+          <img src="/logo/logo.svg" alt="logo" />
+          <img src="/logo/text-logo.svg" alt="text-logo" />
         </a>
       </div>
       <div className="header__right">
