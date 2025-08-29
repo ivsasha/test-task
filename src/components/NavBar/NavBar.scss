@@ -1,0 +1,60 @@
+.header {
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    padding: 13px 32px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 13px 60px;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__button {
+    width: 100px;
+    height: 34px;
+    background-color: rgba(244, 224, 65, 1);
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 80px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 227, 2, 1);
+      transform: scale(1.1);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: rgba(180, 180, 180, 1);
+      color: rgba(255, 255, 255, 0.87);
+    }
+  }
+}

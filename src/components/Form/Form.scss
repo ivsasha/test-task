@@ -1,0 +1,114 @@
+.form-section {
+  padding: 0px 16px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 0 32px 100px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 60px 100px;
+  }
+
+  &__title {
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    width: 100px;
+    height: 34px;
+    border: 0;
+    border-radius: 80px;
+    background-color: rgba(244, 224, 65, 1);
+
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.87);
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 227, 2, 1);
+      transform: scale(1.1);
+    }
+
+    &:disabled {
+      transform: none;
+      cursor: not-allowed;
+      background-color: rgba(180, 180, 180, 1);
+      color: rgba(255, 255, 255, 0.87);
+    }
+  }
+
+  &__error {
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(203, 61, 64, 1);
+    margin-top: 4px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+
+    animation: fadeInError 0.3s ease-in-out;
+  }
+
+  &__helper {
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(126, 126, 126, 1);
+    margin-top: 4px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+
+    animation: fadeInError 0.3s ease-in-out;
+  }
+
+  @keyframes fadeInError {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__api-error {
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(203, 61, 64, 1);
+    background-color: rgba(244, 67, 54, 0.1);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-top: 16px;
+    text-align: center;
+    animation: fadeInError 0.3s ease-in-out;
+  }
+}
