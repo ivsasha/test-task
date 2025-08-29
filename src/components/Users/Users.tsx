@@ -26,6 +26,7 @@ export const Users: React.FC<Props> = ({
                 className="user-section__img"
                 src={`${user.photo}`}
                 alt="user_photo"
+                loading="lazy"
               />
               <p className="user-section__text">{user.name}</p>
               <div className="user-section__contact">

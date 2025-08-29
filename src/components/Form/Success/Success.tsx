@@ -8,6 +8,7 @@ export const Success = () => {
         className="form-section__img-success"
         src="./bg/success-image.svg"
         alt="succses-image"
+        loading="lazy"
       />
     </>
   );
